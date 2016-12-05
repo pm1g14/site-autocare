@@ -1,3 +1,7 @@
-/**
- * Created by panmav on 30/11/16.
- */
+angular.module('autocare').config(['$routeProvider',
+    function($routeProvider) {
+        $routeProvider.
+        when('/home', {
+            templateUrl: 'view/pages/home.html'
+        });
+    }]);
