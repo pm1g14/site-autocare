@@ -11,6 +11,8 @@
             'contact'
         ];
 
+        $scope.footerCopyright = "©Copyright, Created by Panos Mav";
+
 
     })
 })();
