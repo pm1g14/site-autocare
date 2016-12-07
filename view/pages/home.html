@@ -1,3 +1,14 @@
 <div id="home">
+    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li ng-repeat="carouselSlide in carouselSlides" data-target="#home-carousel" data-slide-to="'carouselSlide.slideTo'" class="'carouselSlide.slideClass'"></li>
+        </ol>
+    </div>
 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div ng-repeat="carouselSlide in carouselSlides" class="'carouselSlide.wrapperClass'">
+            <img src="img_chania.jpg" alt="'carouselSlide.alt'">
+        </div>
+    </div>
 </div>
