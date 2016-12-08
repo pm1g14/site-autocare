@@ -7,8 +7,8 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-        <div ng-repeat="carouselSlide in carouselSlides" class="'carouselSlide.wrapperClass'">
-            <img src="img_chania.jpg" alt="'carouselSlide.alt'">
+        <div ng-repeat="carouselSlide in carouselSlides" class="{{carouselSlide.wrapperClass}}">
+            <img src="{{carouselSlide.imageSrc}}" alt="{{carouselSlide.alt}}">
         </div>
     </div>
 </div>

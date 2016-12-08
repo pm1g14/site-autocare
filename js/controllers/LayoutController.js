@@ -15,28 +15,28 @@
 
         $scope.carouselSlides = [
             {
-                imageSrc: "",
+                imageSrc: "../img/slide-1.png",
                 slideClass: "active",
                 slideTo: "0",
                 wrapperClass: "item active",
                 alt: "",
             },
             {
-                imageSrc: "",
+                imageSrc: "../img/slide-2.png",
                 slideClass: "",
                 slideTo: "1",
                 wrapperClass: "item",
                 alt: "",
             },
             {
-                imageSrc: "",
+                imageSrc: "../img/slide-3.png",
                 slideClass: "",
                 slideTo: "2",
                 wrapperClass: "item",
                 alt: "",
             },
             {
-                imageSrc: "",
+                imageSrc: "../img/slide-4.png",
                 slideClass: "",
                 slideTo: "3",
                 wrapperClass: "item",

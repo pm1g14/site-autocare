@@ -14,9 +14,14 @@ body, html {
 }
 
 div#left-bottom, #right-bottom {
-    height: 360px;
+    height: 340px;
     border-radius: 5px;
     box-shadow: 0 0 20px red;
+    background: url("../img/Red-And-Black-Wallpaper.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
