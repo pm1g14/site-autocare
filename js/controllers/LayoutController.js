@@ -12,6 +12,7 @@
         ];
 
         $scope.footerCopyright = "©Copyright, Created by Panos Mav";
+        $scope.mapHeader = "Where to find us:";
 
         $scope.carouselSlides = [
             {
