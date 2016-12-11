@@ -3,14 +3,33 @@
         $scope.name = "Panos";
 
         $scope.menuOptions = [
-            'home',
-            'services',
-            'gallery',
-            'offers',
-            'information',
-            'contact'
+            {
+                option:'home',
+                href: '/home'
+            },
+            {
+                option:'services',
+                href: '/services'
+            },
+            {
+                option: 'gallery',
+                href: '/gallery'
+            },
+            {
+                option: 'offers',
+                href: '/offers'
+            },
+            {
+                option: 'information',
+                href: '/info'
+            },
+            {
+                option: 'contact',
+                href: '/contact'
+            }
         ];
 
+        $scope.addressInfo = "58100, Melissi";
         $scope.footerCopyright = "©Copyright, Created by Panos Mav";
         $scope.mapHeader = "Where to find us:";
 
