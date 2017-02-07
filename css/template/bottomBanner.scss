@@ -11,4 +11,27 @@ div#map {
   left:0;
   right:0;
   background-color:grey;
+  border-radius:10px;
+  box-shadow: 0 0 20px white;
+}
+
+div#bottom-banner-info {
+  width:100%;
+  text-align:center;
+  padding: 23px;
+}
+
+#bottom-banner-photo {
+  padding-left:20px;
+}
+
+.bottom-banner-data {
+  width:80%;
+  margin-bottom:5px;
+  height: 50px;
+  background-image:url("../../img/paint_effect.jpg");
+  background-position-x:-7px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:5px;
 }

@@ -3,5 +3,8 @@ angular.module('autocare').config(['$routeProvider',
         $routeProvider.
         when('/home', {
             templateUrl: 'pages/home.html'
+        })
+        .when('/info', {
+            templateUrl: 'pages/information.html'
         });
     }]);
