@@ -1,41 +1,47 @@
 (function() {
-    angular.module('autocare').controller("LayoutController", function ($scope) {
-        $scope.name = "Panos";
+    angular.module('autocare', ['ngRoute', 'staticContent']).controller("LayoutController", function($scope, menuLabels, bottomBanner, informationText) {
 
         var prefix = '#';
 
         $scope.menuOptions = [
             {
-                option:'home',
+                option: menuLabels.HOME,
                 href: prefix+'/home'
             },
             {
-                option:'services',
+                option: menuLabels.SERVICES,
                 href: prefix+'/services'
             },
             {
-                option: 'gallery',
+                option: menuLabels.GALLERY,
                 href: prefix+'/gallery'
             },
             {
-                option: 'offers',
+                option: menuLabels.OFFERS,
                 href: prefix+'/offers'
             },
             {
-                option: 'information',
+                option: menuLabels.INFORMATION,
                 href: prefix+'/info'
             },
             {
-                option: 'contact',
+                option: menuLabels.CONTACT,
                 href: prefix+'/contact'
             }
         ];
 
-        $scope.addressInfo = "Μελίσσι,Γιαννιτσά Τ.Κ. 58100,τηλ:23820-42455.";
+        $scope.addressInfo = bottomBanner.ADDRESS_INFO;
         $scope.footerCopyright = "©Copyright, Created by Panos Mav";
-        $scope.bottomBannerDataRefunds = "Αναλαμβάνουμε αποζημιώσεις από ασφαλιστικές εταιρίες.";
-        $scope.bottomBannerDataSendEmail = "Άμεσες-online εκτιμήσεις. Στείλτε μας email με ένα κλικ.";
-        $scope.mapHeader = "Που θα μας βρείτε:";
+        $scope.bottomBannerDataRefunds = bottomBanner.REFUNDS;
+        $scope.bottomBannerDataSendEmail = bottomBanner.SEND_EMAIL;
+        $scope.bottomBannerDataViewOffers = bottomBanner.VIEW_OFFERS;
+        $scope.bottomBannerDataViewOffersLink = bottomBanner.VIEW_OFFERS_LINK;
+        $scope.mapHeader = bottomBanner.MAP_HEADER;
+        $scope.informationMain = informationText.INFO_MAIN;
+        $scope.informationCar = informationText.INFO_GET_CAR;
+        $scope.informationSendEmail = informationText.INFO_EMAIL;
+        $scope.informationOffers = informationText.INFO_OFFERS;
+        $scope.informationPageHeader = informationText.INFO_HEADER;
 
         $scope.carouselSlides = [
             {
@@ -43,29 +49,29 @@
                 slideClass: "active",
                 slideTo: "0",
                 wrapperClass: "item active",
-                alt: "",
+                alt: ""
             },
             {
                 imageSrc: "../img/slide-2.png",
                 slideClass: "",
                 slideTo: "1",
                 wrapperClass: "item",
-                alt: "",
+                alt: ""
             },
             {
                 imageSrc: "../img/slide-3.png",
                 slideClass: "",
                 slideTo: "2",
                 wrapperClass: "item",
-                alt: "",
+                alt: ""
             },
             {
                 imageSrc: "../img/slide-4.png",
                 slideClass: "",
                 slideTo: "3",
                 wrapperClass: "item",
-                alt: "",
+                alt: ""
             }
         ];
-    })
+    });
 })();
