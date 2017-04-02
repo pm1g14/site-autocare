@@ -1,7 +1,7 @@
 <div ng-controller="ServicesController as services">
     <div class="row">
         <div class="col-md-6">
-            <div class="services-left">
+            <div class="services-left" ng-include="'partials/paintingCarousel.html'">
 
             </div>
         </div>
@@ -15,7 +15,7 @@
     </div>
     <div class="row">
         <div class="col-md-6">
-            <div class="services-left">
+            <div class="services-left" ng-include="'partials/polishingCarousel.html'">
 
             </div>
         </div>
@@ -29,7 +29,7 @@
     </div>
     <div class="row">
         <div class="col-md-6">
-            <div class="services-left">
+            <div class="services-left" ng-include="'partials/cleaningCarousel.html'">
 
             </div>
         </div>
@@ -37,13 +37,13 @@
             <div class="services-right">
                 <h1>{{serviceLightCleaningHeader}}</h1>
                 <p></p>
-                <p class="serif">{{serviceLightRimPaintContent}}</p>
+                <p class="serif">{{serviceLightCleaningContent}}</p>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <div class="services-left">
+            <div class="services-left" ng-include="'partials/rimsCarousel.html'">
 
             </div>
         </div>

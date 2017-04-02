@@ -1,0 +1,12 @@
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox" ng-repeat="serviceCarousel in serviceCarousels">
+    <div ng-repeat="cleaningSlide in cleaningSlides" class="{{cleaningSlide.wrapperClass}}">
+        <img ng-src="{{cleaningSlide.imageSrc}}" alt="{{cleaningSlide.alt}}">
+    </div>
+</div>
+
+<div id="home-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li ng-repeat="cleaningSlide in cleaningSlides" data-target="#home-carousel" data-slide-to="{{cleaningSlide.slideTo}}" class="{{cleaningSlide.slideClass}}"></li>
+    </ol>
+</div>

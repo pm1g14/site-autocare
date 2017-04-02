@@ -1,0 +1,12 @@
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+    <div ng-repeat="paintingSlide in paintingSlides" class="{{paintingSlide.wrapperClass}}">
+        <img ng-src="{{paintingSlide.imageSrc}}" alt="{{paintingSlide.alt}}">
+    </div>
+</div>
+
+<div id="home-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li ng-repeat="paintingSlide in paintingSlides" data-target="#home-carousel" data-slide-to="{{paintingSlide.slideTo}}" class="{{paintingSlide.slideClass}}"></li>
+    </ol>
+</div>
